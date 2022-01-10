@@ -1,4 +1,6 @@
-import { myStorage, listbooks, form, formtitle, alertDiv } from './pageElements.js';
+import {
+  myStorage, listbooks, alertDiv,
+} from './pageElements.js';
 import { findHight } from './manupulateDom.js';
 
 class Books {
@@ -57,7 +59,7 @@ class Books {
     const dltBtn = document.createElement('button');
     dltBtn.innerText = 'Remove';
     dltBtn.setAttribute('data-book-name', `${book.title}`);
-    dltBtn.setAttribute('type', 'button')
+    dltBtn.setAttribute('type', 'button');
     dltBtn.addEventListener('click', () => Books.removeBook(dltBtn));
     const p = document.createElement('p');
     p.innerHTML = `<q>${book.title}</q> by ${book.author}`;

@@ -106,7 +106,7 @@ h2 {
   line-height: 30px;
 }
 
-#listbooks>li:nth-child(odd) {
+#listbooks > li:nth-child(odd) {
   background-color: #eae8e8;
 }
 

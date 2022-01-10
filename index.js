@@ -1,18 +1,18 @@
-import { DateTime } from './node_modules/luxon/src/luxon.js';
 import {
   form,
   navs,
   title,
   author,
   todayDate,
+  currentTime,
 } from './modules/pageElements.js';
-import { findHight } from './modules/manupulateDom.js';
+import { findHight, dateTimeFormater } from './modules/manupulateDom.js';
 import Books from './modules/Books.js';
 
 (() => {
   Books.load();
   findHight();
-  todayDate.textContent = DateTime.now().toLocaleString(DateTime.DATETIME_MED);
+  dateTimeFormater(todayDate, currentTime);
   form.addEventListener('submit', (e) => {
     e.preventDefault();
     if (title.value !== '' && author.value !== '') {

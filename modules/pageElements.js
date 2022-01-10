@@ -7,3 +7,4 @@ export const title = document.querySelector('#title');
 export const author = document.querySelector('#author');
 export const alertDiv = document.querySelector('#alert-block');
 export const todayDate = document.querySelector('#todaydate');
+export const currentTime = document.querySelector('#currenttime');
