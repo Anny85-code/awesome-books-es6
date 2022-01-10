@@ -6,7 +6,7 @@
 - HTML & CSS & JavaScript
 - Html & Css linters
 ## Live Demo
-### [LIVE DEMO LINK](https://aimemalaika.github.io/awsome-books/)
+### [LIVE DEMO LINK](https://aimemalaika.github.io/awesome-books-es6/)
 ## Getting Started
 - clone the repository by running\
     `git clone https://github.com/aimemalaika/awsome-books`
