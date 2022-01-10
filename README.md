@@ -1,17 +1,19 @@
 # My Awesome Book website
 > "Awesome books" is a simple website that displays a list of books and allows you to add and remove books from that list. By building this application, you will learn how to manage data using JavaScript. Thanks to that your website will be more interactive.
-![screenshot](./image/Screenshot.png)\
+![screenshot](./image/Screenshot.png)
 
 ## Built With
 - HTML & CSS & JavaScript
 - Html & Css linters
 ## Live Demo
-### [LIVE DEMO LINK](https://aimemalaika.github.io/awsome-books/)
+### UNAVAILABLE REQUIRES A SERVER
 ## Getting Started
 - clone the repository by running\
     `git clone https://github.com/aimemalaika/awsome-books`
 - navigate to the folder\
     `cd awsome-books`
+- Install packages\
+    `npm install`
 ## Authors 
 
 👤 **Aime Malaika**

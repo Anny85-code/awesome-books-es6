@@ -1,10 +1,11 @@
 {
+  "homepage": "https://github.com/aimemalaika/awesome-books-es6#readme",
   "name": "awesome-books-es6",
   "version": "1.0.0",
   "description": "> \"Awesome books\" is a simple website that displays a list of books and allows you to add and remove books from that list. By building this application, you will learn how to manage data using JavaScript. Thanks to that your website will be more interactive. ![screenshot](./image/Screenshot.png)\\",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "npx hint . && npx stylelint **/*.{css,scss} && npx eslint ."
   },
   "repository": {
     "type": "git",
@@ -16,5 +17,18 @@
   "bugs": {
     "url": "https://github.com/aimemalaika/awesome-books-es6/issues"
   },
-  "homepage": "https://github.com/aimemalaika/awesome-books-es6#readme"
+  "dependencies": {
+    "luxon": "^2.3.0"
+  },
+  "devDependencies": {
+    "babel-eslint": "^10.1.0",
+    "eslint": "^7.32.0",
+    "eslint-config-airbnb-base": "^14.2.1",
+    "eslint-plugin-import": "^2.25.4",
+    "hint": "^6.1.9",
+    "stylelint": "^13.13.1",
+    "stylelint-config-standard": "^21.0.0",
+    "stylelint-csstree-validator": "^1.9.0",
+    "stylelint-scss": "^3.21.0"
+  }
 }
