@@ -7,12 +7,11 @@ class Books {
     this.author = author;
   }
 
-  static db = () =>
-    (myStorage.getItem('books') !== null? JSON.parse(myStorage.getItem('books')): []);
+  static db = () => (myStorage.getItem('books') !== null ? JSON.parse(myStorage.getItem('books')) : []);
 
   static removeBook = (button) => {
     const result = this.db().filter(
-      (word) => word.title !== button.getAttribute('data-book-name')
+      (word) => word.title !== button.getAttribute('data-book-name'),
     );
     button.parentElement.remove();
     myStorage.setItem('books', JSON.stringify(result));
