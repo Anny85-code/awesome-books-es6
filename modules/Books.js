@@ -1,6 +1,4 @@
-import {
-  myStorage, listbooks, alertDiv,
-} from './pageElements.js';
+import { myStorage, listbooks, alertDiv } from './pageElements.js';
 import { findHight } from './manupulateDom.js';
 
 class Books {
@@ -9,15 +7,17 @@ class Books {
     this.author = author;
   }
 
-  static db = () => ((myStorage.getItem('books') !== null) ? JSON.parse(myStorage.getItem('books')) : [])
+  static db = () => (myStorage.getItem('books') !== null ? JSON.parse(myStorage.getItem('books')) : []);
 
   static removeBook = (button) => {
-    const result = this.db().filter((word) => word.title !== button.getAttribute('data-book-name'));
+    const result = this.db().filter(
+      (word) => word.title !== button.getAttribute('data-book-name'),
+    );
     button.parentElement.remove();
     myStorage.setItem('books', JSON.stringify(result));
     this.showAlert('Book deleted ', 'success');
     findHight();
-  }
+  };
 
   static load = () => {
     this.db().forEach((data) => {
@@ -28,7 +28,7 @@ class Books {
                   </li>
               `;
     });
-  }
+  };
 
   static addBook = (book) => {
     const result = this.db().filter((word) => word.title === book.title);
@@ -45,7 +45,7 @@ class Books {
     } else {
       this.showAlert('Book already exists ', 'danger');
     }
-  }
+  };
 
   static showAlert = (message, className) => {
     const div = document.createElement('div');
@@ -53,7 +53,7 @@ class Books {
     div.appendChild(document.createTextNode(message));
     alertDiv.appendChild(div);
     setTimeout(() => document.querySelector('.alert').remove(), 3000);
-  }
+  };
 
   static createListElement = (book) => {
     const dltBtn = document.createElement('button');
@@ -67,6 +67,6 @@ class Books {
     liEl.appendChild(p);
     liEl.appendChild(dltBtn);
     listbooks.appendChild(liEl);
-  }
+  };
 }
 export default Books;
