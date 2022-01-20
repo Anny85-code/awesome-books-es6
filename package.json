@@ -1,5 +1,5 @@
 {
-  "homepage": "https://github.com/aimemalaika/awesome-books-es6#readme",
+  "homepage": "https://github.com/Anny85-code/awesome-books-es6#readme",
   "name": "awesome-books-es6",
   "version": "1.0.0",
   "description": "> \"Awesome books\" is a simple website that displays a list of books and allows you to add and remove books from that list. By building this application, you will learn how to manage data using JavaScript. Thanks to that your website will be more interactive. ![screenshot](./image/Screenshot.png)\\",
@@ -9,13 +9,13 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/aimemalaika/awesome-books-es6.git"
+    "url": "git+https://github.com/Anny85-code/awesome-books-es6"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/aimemalaika/awesome-books-es6/issues"
+    "url": "https://github.com/Anny85-code/awesome-books-es6"
   },
   "dependencies": {
     "luxon": "^2.3.0"
